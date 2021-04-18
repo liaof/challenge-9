@@ -1,5 +1,5 @@
 
-  # thisproject ![Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) ![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg) ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) 
+  # myproject ![Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) ![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg) ![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg) ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) 
   
   
   ## Table of Contents
@@ -14,19 +14,19 @@
    
 
   ## Description <a name="abstract"></a>
-  greatest proejct ever
+  For this project I made a program
 
   ## Installation Guide <a name="installation"></a>
-  install it how you want
+  Install by clicking install
 
   ## Usage Guide <a name="usage"></a>
-  use it how you want
+  Use this program underwater ONLY
 
   ## Contribution Guildline <a name="coontribution"></a>
-  contribute never
+  Hello there
 
   ## Test Guidlines <a name="test"></a> 
-  this program was tested on animals
+  None
   
   ### Questions 
   
@@ -34,4 +34,4 @@
     
   You can also contact me via email @ f.liao163@gmail.com
   
-  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg)</br> [GPLv3 License](http://perso.crans.org/besson/LICENSE.html)</br> [Open Source](https://github.com/ellerbrock/open-source-badges/)</br> 
+  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg)</br> [CC-0 License](https://creativecommons.org/licenses/by-nd/4.0)</br> [GPLv3 License](http://perso.crans.org/besson/LICENSE.html)</br> [Open Source](https://github.com/ellerbrock/open-source-badges/)</br> 
