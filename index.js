@@ -109,6 +109,12 @@ const questions = [
       }
     }
   },
+  {
+    type: 'checkbox',
+    name: 'license',
+    message: 'Which licenses does your project use? (Check all that apply)',
+    choices: ['Eclipse', 'MIT', 'Creative Commons Licenses', 'GPLv3', 'Open Source']
+  },
   ];
 
 // TODO: Create a function to write README file
@@ -126,6 +132,7 @@ function init() {
 
 // Function call to initialize app
 init().then(data => {
+    console.log(data.license);
     return generateMarkdown(data);
   }).then(htmlCode => {
       return writeMarkdown(htmlCode);
