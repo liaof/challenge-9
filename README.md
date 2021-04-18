@@ -1,7 +1,7 @@
 # Professional README Generator Starter Code
 
 
-### [Link to video](https://www.youtube.com/watch?v=LHC1ixs88iI)
+### [Link to video](https://www.youtube.com/watch?v=RKwCOhdTVU0)
 
 ## Table of Contents
 1. [Description](#a)
