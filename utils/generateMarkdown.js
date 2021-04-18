@@ -11,14 +11,14 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 function generateTOC(data) {
-    return `
-    ## Table of Contents
-    1. [Abstract](#abstract)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [Contribution](#contribution)
-    5. [Test](#test)
-   `
+  return `
+  ## Table of Contents
+  1. [Abstract](#abstract)
+  2. [Installation](#installation)
+  3. [Usage](#usage)
+  4. [Contribution](#contribution)
+  5. [Test](#test)
+   `;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -27,7 +27,7 @@ function generateMarkdown(data) {
   # ${data.reponame}
   
   ${generateTOC()}
-  
+
   ## Abstract <a name="abstract"></a>
   ${data.abstract}
 
