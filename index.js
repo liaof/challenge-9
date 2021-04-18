@@ -5,38 +5,38 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const writeMarkdown = require('./utils/writeMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [ 
-//  {
-//    type: 'input',
-//    name: 'username',
-//    message: 'Enter your GitHub Username (Required)',
-//    validate: usernameInput => {
-//      if (usernameInput) {
-//        return true;
-//      } else {
-//        console.log('Please enter your repo URL!');
-//        return false;
-//      }
-//    }
-//  },     
-//  {
-//    type: 'input',
-//    name: 'repoURL',
-//    message: 'Enter your repo URL (Required)',
-//    validate: repoURLInput => {
-//      if (repoURLInput) {
-//        return true;
-//      } else {
-//        console.log('Please enter your repo URL!');
-//        return false;
-//      }
-//    }
-//  },
+  {
+    type: 'input',
+    name: 'username',
+    message: 'Enter your GitHub Username (Required)',
+    validate: usernameInput => {
+      if (usernameInput) {
+        return true;
+      } else {
+        console.log('Please enter your repo URL!');
+        return false;
+      }
+    }
+  },     
   {
     type: 'input',
     name: 'reponame',
     message: 'Enter the name of your project (Required)',
     validate: reponameInput => {
       if (reponameInput) {
+        return true;
+      } else {
+        console.log('Please enter your project name!');
+        return false;
+      }
+    }
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email (Required)',
+    validate: emailInput => {
+      if (emailInput) {
         return true;
       } else {
         console.log('Please enter your project name!');

@@ -26,20 +26,55 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+    if (license.length>0){
+        let temp = "";
+        temp ="7. [licenses](#licenses)";
+        return temp;
+    } else return "";
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-function generateTOC(data) {
+function renderLicenseSection(license) {
+    let temp ="";
+    //only make a Licesense header if there's content to display
+    if (license.length>0){
+        temp += "## Licenses <a name='licenses'></a></br>"
+    };
+    for (var u = 0; u<license.length; u++){
+    
+        if (license[u]=="Eclipse"){
+            temp += "[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) "
+        } else if (license[u]=="MIT") {
+            temp += "[MIT license](https://lbesson.mit-license.org/) "
+        } else if (license[u]=="Creative Commons Licenses") {
+            temp += "[CC-0 license](https://creativecommons.org/licenses/by-nd/4.0) "
+        } else if (license[u]=="GPLv3") {
+            temp += "[GPLv3 license](http://perso.crans.org/besson/LICENSE.html) "
+        } else if (license[u]=="Open Source") {
+            temp += "[Open Source](https://github.com/ellerbrock/open-source-badges/) "
+        }
+    }
+    return temp;
+};
+function renderQuestions(username, email) {
+  return `
+  My Github can be found [HERE](https://github.com/${username})
+    
+  You can also contact me via email @ ${email}`;
+}
+function generateTOC(license) {
   return `
   ## Table of Contents
-  1. [Abstract](#abstract)
+  1. [Description](#abstract)
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Contribution](#contribution)
   5. [Test](#test)
+  6. [Questions](#questions)
+  ${renderLicenseLink(license)}
+ 
    `;
 }
 
@@ -48,9 +83,9 @@ function generateMarkdown(data) {
   return `
   # ${data.reponame} ${renderLicenseBadge(data.license)}
   
-  ${generateTOC()}
+  ${generateTOC(data.license)}
 
-  ## Abstract <a name="abstract"></a>
+  ## Description <a name="abstract"></a>
   ${data.abstract}
 
   ## Installation Guide <a name="installation"></a>
@@ -65,7 +100,11 @@ function generateMarkdown(data) {
   ## Test Guidlines <a name="test"></a> 
   ${data.test}
   
-  ${renderLicenseSection(data.license)}`;
-}
+  ### Questions 
+  ${renderQuestions(data.username, data.email)}
+  
+  ${renderLicenseSection(data.license)}`
+};
 
 module.exports = generateMarkdown;
+
