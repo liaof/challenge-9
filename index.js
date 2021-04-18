@@ -1,8 +1,23 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
+
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const writeMarkdown = require('./utils/writeMarkdown');
 // TODO: Create an array of questions for user input
-const questions = [    
+const questions = [ 
+  {
+    type: 'input',
+    name: 'username',
+    message: 'Enter your GitHub Username (Required)',
+    validate: usernameInput => {
+      if (usernameInput) {
+        return true;
+      } else {
+        console.log('Please enter your repo URL!');
+        return false;
+      }
+    }
+  },     
   {
     type: 'input',
     name: 'repoURL',
@@ -18,10 +33,10 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'name',
+    name: 'reponame',
     message: 'Give the name of your project (Required)',
-    validate: nameInput => {
-      if (nameInput) {
+    validate: reponameInput => {
+      if (reponameInput) {
         return true;
       } else {
         console.log('Please enter your project name!');
@@ -98,7 +113,7 @@ const questions = [
     type: 'input',
     name: 'about',
     message: 'Provide some information about yourself:',
-    when: ({ confirmAbout }) => confirmAbout
+    //when: ({ confirmAbout }) => confirmAbout
   }];
 
 // TODO: Create a function to write README file
@@ -115,5 +130,11 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init().then(data => {
+    return generateMarkdown(data);
+  }).then(htmlCode => {
+      return writeMarkdown(htmlCode);
+  })
+;
 
+//init().then(generateMarkDown(inputData);)
