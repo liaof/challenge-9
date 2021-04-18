@@ -1,5 +1,5 @@
 
-  # this ![Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) ![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg) ![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg 
+  # thisproject ![Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) ![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg) ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) 
   
   
   ## Table of Contents
@@ -14,19 +14,19 @@
    
 
   ## Description <a name="abstract"></a>
-  no thank you
+  greatest proejct ever
 
   ## Installation Guide <a name="installation"></a>
-  do it yourself
+  install it how you want
 
   ## Usage Guide <a name="usage"></a>
   use it how you want
 
   ## Contribution Guildline <a name="coontribution"></a>
-  dont contribute, i wond appreciated it
+  contribute never
 
   ## Test Guidlines <a name="test"></a> 
-  none
+  this program was tested on animals
   
   ### Questions 
   
@@ -34,4 +34,4 @@
     
   You can also contact me via email @ f.liao163@gmail.com
   
-  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) [CC-0 license](https://creativecommons.org/licenses/by-nd/4.0) [GPLv3 license](http://perso.crans.org/besson/LICENSE.html) 
+  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) [GPLv3 license](http://perso.crans.org/besson/LICENSE.html) [Open Source](https://github.com/ellerbrock/open-source-badges/) 

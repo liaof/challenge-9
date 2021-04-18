@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
         } else if (license[u]=="Creative Commons Licenses") {
             temp += "![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg) "
         } else if (license[u]=="GPLv3") {
-            temp += "![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg "
+            temp += "![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg) "
         } else if (license[u]=="Open Source") {
             temp += "![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) "
         }
