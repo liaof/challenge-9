@@ -26,6 +26,8 @@ function generateMarkdown(data) {
   return `
   # ${data.reponame}
   
+  ${generateTOC()}
+  
   ## Abstract <a name="abstract"></a>
   ${data.abstract}
 
