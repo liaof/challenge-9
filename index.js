@@ -5,36 +5,36 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const writeMarkdown = require('./utils/writeMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [ 
-  {
-    type: 'input',
-    name: 'username',
-    message: 'Enter your GitHub Username (Required)',
-    validate: usernameInput => {
-      if (usernameInput) {
-        return true;
-      } else {
-        console.log('Please enter your repo URL!');
-        return false;
-      }
-    }
-  },     
-  {
-    type: 'input',
-    name: 'repoURL',
-    message: 'Enter your repo URL (Required)',
-    validate: repoURLInput => {
-      if (repoURLInput) {
-        return true;
-      } else {
-        console.log('Please enter your repo URL!');
-        return false;
-      }
-    }
-  },
+//  {
+//    type: 'input',
+//    name: 'username',
+//    message: 'Enter your GitHub Username (Required)',
+//    validate: usernameInput => {
+//      if (usernameInput) {
+//        return true;
+//      } else {
+//        console.log('Please enter your repo URL!');
+//        return false;
+//      }
+//    }
+//  },     
+//  {
+//    type: 'input',
+//    name: 'repoURL',
+//    message: 'Enter your repo URL (Required)',
+//    validate: repoURLInput => {
+//      if (repoURLInput) {
+//        return true;
+//      } else {
+//        console.log('Please enter your repo URL!');
+//        return false;
+//      }
+//    }
+//  },
   {
     type: 'input',
     name: 'reponame',
-    message: 'Give the name of your project (Required)',
+    message: 'Enter the name of your project (Required)',
     validate: reponameInput => {
       if (reponameInput) {
         return true;
@@ -60,7 +60,7 @@ const questions = [
   {
     type: 'input',
     name: 'install',
-    message: 'Enter the install instructions',
+    message: 'Enter the install instructions (Required) (use </br> to start a new line)',
     validate: installInput => {
       if (installInput) {
         return true;
@@ -73,7 +73,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'Enter the usage information (Required)',
+    message: 'Enter the usage information (Required) (use </br> to start a new line)',
     validate: usageInput => {
       if (usageInput) {
         return true;
@@ -86,7 +86,7 @@ const questions = [
   {
     type: 'input',
     name: 'contribution',
-    message: 'Enter contribution guidelines (Required)',
+    message: 'Enter contribution guidelines (Required) (use </br> to start a new line)',
     validate: contributionInput => {
       if (contributionInput) {
         return true;
@@ -99,7 +99,7 @@ const questions = [
   {
     type: 'input',
     name: 'test',
-    message: 'Enter test guidelines (Required)',
+    message: 'Enter test guidelines (Required) (use </br> to start a new line)',
     validate: contributionInput => {
       if (contributionInput) {
         return true;
@@ -109,12 +109,7 @@ const questions = [
       }
     }
   },
-  {
-    type: 'input',
-    name: 'about',
-    message: 'Provide some information about yourself:',
-    //when: ({ confirmAbout }) => confirmAbout
-  }];
+  ];
 
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {

@@ -15,22 +15,20 @@ function generateMarkdown(data) {
   return `
   # ${data.reponame}
   
-  ### Abstract
+  ## Abstract
   ${data.abstract}
 
-  ### Installation Guide
+  ## Installation Guide
   ${data.install}
 
-  ### Usage Guide
+  ## Usage Guide
   ${data.usage}
 
-  ### Contribution Guildline
+  ## Contribution Guildline
   ${data.contribution}
 
-  ### Test Guidlines 
-  ${data.test}
-
-    `;
+  ## Test Guidlines 
+  ${data.test}`;
 }
 
 module.exports = generateMarkdown;
