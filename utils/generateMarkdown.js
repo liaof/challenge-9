@@ -29,7 +29,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license.length>0){
         let temp = "";
-        temp ="7. [licenses](#licenses)";
+        temp ="7. [Licenses](#licenses)";
         return temp;
     } else return "";
 }
@@ -45,15 +45,15 @@ function renderLicenseSection(license) {
     for (var u = 0; u<license.length; u++){
     
         if (license[u]=="Eclipse"){
-            temp += "[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) "
+            temp += "[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg)</br> "
         } else if (license[u]=="MIT") {
-            temp += "[MIT license](https://lbesson.mit-license.org/) "
+            temp += "[MIT License](https://lbesson.mit-license.org/)</br> "
         } else if (license[u]=="Creative Commons Licenses") {
-            temp += "[CC-0 license](https://creativecommons.org/licenses/by-nd/4.0) "
+            temp += "[CC-0 License](https://creativecommons.org/licenses/by-nd/4.0)</br> "
         } else if (license[u]=="GPLv3") {
-            temp += "[GPLv3 license](http://perso.crans.org/besson/LICENSE.html) "
+            temp += "[GPLv3 License](http://perso.crans.org/besson/LICENSE.html)</br> "
         } else if (license[u]=="Open Source") {
-            temp += "[Open Source](https://github.com/ellerbrock/open-source-badges/) "
+            temp += "[Open Source](https://github.com/ellerbrock/open-source-badges/)</br> "
         }
     }
     return temp;

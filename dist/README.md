@@ -9,7 +9,7 @@
   4. [Contribution](#contribution)
   5. [Test](#test)
   6. [Questions](#questions)
-  7. [licenses](#licenses)
+  7. [Licenses](#licenses)
  
    
 
@@ -34,4 +34,4 @@
     
   You can also contact me via email @ f.liao163@gmail.com
   
-  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg) [GPLv3 license](http://perso.crans.org/besson/LICENSE.html) [Open Source](https://github.com/ellerbrock/open-source-badges/) 
+  ## Licenses <a name='licenses'></a></br>[Eclipse License](https://img.shields.io/badge/License-EPL%201.0-red.svg)</br> [GPLv3 License](http://perso.crans.org/besson/LICENSE.html)</br> [Open Source](https://github.com/ellerbrock/open-source-badges/)</br> 
