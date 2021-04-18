@@ -10,24 +10,35 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+function generateTOC(data) {
+    return `
+    ## Table of Contents
+    1. [Abstract](#abstract)
+    2. [Installation](#installation)
+    3. [Usage](#usage)
+    4. [Contribution](#contribution)
+    5. [Test](#test)
+   `
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.reponame}
   
-  ## Abstract
+  ## Abstract <a name="abstract"></a>
   ${data.abstract}
 
-  ## Installation Guide
+  ## Installation Guide <a name="installation"></a>
   ${data.install}
 
-  ## Usage Guide
+  ## Usage Guide <a name="usage"></a>
   ${data.usage}
 
-  ## Contribution Guildline
+  ## Contribution Guildline <a name="coontribution"></a>
   ${data.contribution}
 
-  ## Test Guidlines 
+  ## Test Guidlines <a name="test"></a> 
   ${data.test}`;
 }
 
